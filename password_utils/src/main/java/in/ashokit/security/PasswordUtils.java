@@ -7,6 +7,7 @@ public class PasswordUtils
 {
 	public String encodePassword(String password)
 	{
+		System.out.println("Getting encoded password...");
 		Encoder encoder = Base64.getEncoder();
 		byte[] encode = encoder.encode(password.getBytes());
 		String encodedPassword = new String(encode);
